@@ -1,0 +1,6 @@
+{
+  "name": "Smart Classroom Management",
+  "description": "A full-stack, role-based smart classroom management system featuring dynamic timetables, interactive material downloads, attendance tracking, lesson planning, assignment uploads, engagement tracking, and generative AI analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
