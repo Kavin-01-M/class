@@ -1,0 +1,422 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "fullName": "Elizabeth Vance (Admin)",
+      "email": "admin@slate.com",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "u2",
+      "fullName": "Marcus Brody (Teacher)",
+      "email": "teacher@slate.com",
+      "password": "teacher",
+      "role": "teacher"
+    },
+    {
+      "id": "u3",
+      "fullName": "Sarah Jenkins (Student)",
+      "email": "student@slate.com",
+      "password": "student",
+      "role": "student",
+      "studentId": "s1"
+    }
+  ],
+  "classes": [
+    {
+      "id": "c1",
+      "name": "Class 10-A",
+      "grade": "Grade 10",
+      "room": "Room 402",
+      "subject": "Advanced Science",
+      "teacherId": "u2"
+    },
+    {
+      "id": "c2",
+      "name": "Class 11-B",
+      "grade": "Grade 11",
+      "room": "Room 205",
+      "subject": "Computer Science & AP Physics",
+      "teacherId": "u2"
+    },
+    {
+      "id": "c3",
+      "name": "Class 12-C",
+      "grade": "Grade 12",
+      "room": "Lab 1",
+      "subject": "Modern Literature",
+      "teacherId": "u2"
+    }
+  ],
+  "students": [
+    {
+      "id": "s1",
+      "fullName": "Sarah Jenkins",
+      "rollNumber": "10A-01",
+      "email": "student@slate.com",
+      "classId": "c1",
+      "parentName": "John Jenkins",
+      "parentContact": "+1 (555) 019-2834"
+    },
+    {
+      "id": "s2",
+      "fullName": "Lucas Thorne",
+      "rollNumber": "10A-02",
+      "email": "lucas@slate.com",
+      "classId": "c1",
+      "parentName": "Helen Thorne",
+      "parentContact": "+1 (555) 019-3945"
+    },
+    {
+      "id": "s3",
+      "fullName": "Maya Lin",
+      "rollNumber": "10A-03",
+      "email": "maya@slate.com",
+      "classId": "c1",
+      "parentName": "David Lin",
+      "parentContact": "+1 (555) 019-4821"
+    },
+    {
+      "id": "s4",
+      "fullName": "Liam Chen",
+      "rollNumber": "11B-01",
+      "email": "liam@slate.com",
+      "classId": "c2",
+      "parentName": "Ying Chen",
+      "parentContact": "+1 (555) 019-5732"
+    },
+    {
+      "id": "s5",
+      "fullName": "Sophia Martinez",
+      "rollNumber": "11B-02",
+      "email": "sophia@slate.com",
+      "classId": "c2",
+      "parentName": "Carlos Martinez",
+      "parentContact": "+1 (555) 019-6843"
+    },
+    {
+      "id": "s6",
+      "fullName": "Ethan Hunt",
+      "rollNumber": "12C-01",
+      "email": "ethan@slate.com",
+      "classId": "c3",
+      "parentName": "Sarah Hunt",
+      "parentContact": "+1 (555) 019-7954"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "att1",
+      "studentId": "s1",
+      "classId": "c1",
+      "date": "2026-07-13",
+      "status": "present",
+      "remarks": ""
+    },
+    {
+      "id": "att2",
+      "studentId": "s2",
+      "classId": "c1",
+      "date": "2026-07-13",
+      "status": "absent",
+      "remarks": "Dentist appointment"
+    },
+    {
+      "id": "att3",
+      "studentId": "s3",
+      "classId": "c1",
+      "date": "2026-07-13",
+      "status": "present",
+      "remarks": ""
+    },
+    {
+      "id": "att4",
+      "studentId": "s1",
+      "classId": "c1",
+      "date": "2026-07-14",
+      "status": "present",
+      "remarks": ""
+    },
+    {
+      "id": "att5",
+      "studentId": "s2",
+      "classId": "c1",
+      "date": "2026-07-14",
+      "status": "present",
+      "remarks": ""
+    },
+    {
+      "id": "att6",
+      "studentId": "s3",
+      "classId": "c1",
+      "date": "2026-07-14",
+      "status": "present",
+      "remarks": ""
+    },
+    {
+      "id": "att7",
+      "studentId": "s1",
+      "classId": "c1",
+      "date": "2026-07-15",
+      "status": "late",
+      "remarks": "Bus delayed"
+    },
+    {
+      "id": "att8",
+      "studentId": "s2",
+      "classId": "c1",
+      "date": "2026-07-15",
+      "status": "present",
+      "remarks": ""
+    },
+    {
+      "id": "att9",
+      "studentId": "s3",
+      "classId": "c1",
+      "date": "2026-07-15",
+      "status": "present",
+      "remarks": ""
+    },
+    {
+      "id": "att10",
+      "studentId": "s4",
+      "classId": "c2",
+      "date": "2026-07-15",
+      "status": "present",
+      "remarks": ""
+    },
+    {
+      "id": "att11",
+      "studentId": "s5",
+      "classId": "c2",
+      "date": "2026-07-15",
+      "status": "absent",
+      "remarks": "Unwell"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "asm1",
+      "title": "Quantum Mechanics Introduction Essay",
+      "description": "Write a 500-word summary explaining the double-slit experiment and its profound implications on light wave-particle duality.",
+      "dueDate": "2026-07-22",
+      "classId": "c1",
+      "maxPoints": 100,
+      "submissions": [
+        {
+          "studentId": "s1",
+          "studentName": "Sarah Jenkins",
+          "fileName": "Sarah_Double_Slit_Essay.pdf",
+          "content": "In quantum mechanics, the double-slit experiment is a demonstration that light and matter can display characteristics of both classically-defined waves and particles...",
+          "submittedAt": "2026-07-15T14:32:00.000Z",
+          "grade": 95,
+          "comments": "Excellent depth of argument and elegant structure."
+        },
+        {
+          "studentId": "s2",
+          "studentName": "Lucas Thorne",
+          "fileName": "LucasT_QuantumAsm.pdf",
+          "content": "This paper explores wave particle behavior of electrons when projected through dual micro-openings...",
+          "submittedAt": "2026-07-16T09:15:00.000Z",
+          "grade": null,
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "id": "asm2",
+      "title": "Vite React Dashboard Architecture",
+      "description": "Create a fully modular Vite React application with proper type definitions, routing boundaries, and beautiful Tailwind layout.",
+      "classId": "c2",
+      "dueDate": "2026-07-25",
+      "maxPoints": 100,
+      "submissions": []
+    },
+    {
+      "id": "asm3",
+      "title": "Shakespeare's Hamlet Soliloquy Analysis",
+      "description": "Analyze the dramatic irony and existential dread of the 'To be or not to be' monologue in Act 3, Scene 1.",
+      "classId": "c3",
+      "dueDate": "2026-07-20",
+      "maxPoints": 50,
+      "submissions": []
+    }
+  ],
+  "timetable": [
+    {
+      "id": "tt1",
+      "classId": "c1",
+      "day": "Monday",
+      "period": "09:00 AM - 10:30 AM",
+      "subject": "Advanced Physics",
+      "room": "Room 402",
+      "teacherName": "Marcus Brody"
+    },
+    {
+      "id": "tt2",
+      "classId": "c1",
+      "day": "Monday",
+      "period": "11:00 AM - 12:30 PM",
+      "subject": "Chemistry Lab",
+      "room": "Chemistry Wing",
+      "teacherName": "Dr. Angela Merkel"
+    },
+    {
+      "id": "tt3",
+      "classId": "c1",
+      "day": "Tuesday",
+      "period": "09:00 AM - 10:30 AM",
+      "subject": "Applied Calculus",
+      "room": "Room 402",
+      "teacherName": "Marcus Brody"
+    },
+    {
+      "id": "tt4",
+      "classId": "c1",
+      "day": "Wednesday",
+      "period": "01:30 PM - 03:00 PM",
+      "subject": "Organic Biochemistry",
+      "room": "Room 402",
+      "teacherName": "Dr. Angela Merkel"
+    },
+    {
+      "id": "tt5",
+      "classId": "c1",
+      "day": "Thursday",
+      "period": "10:45 AM - 12:15 PM",
+      "subject": "Quantum Mechanics Seminars",
+      "room": "Room 402",
+      "teacherName": "Marcus Brody"
+    },
+    {
+      "id": "tt6",
+      "classId": "c1",
+      "day": "Friday",
+      "period": "02:00 PM - 03:30 PM",
+      "subject": "Weekly Tech & AI Workshop",
+      "room": "Room 402",
+      "teacherName": "Marcus Brody"
+    },
+    {
+      "id": "tt7",
+      "classId": "c2",
+      "day": "Monday",
+      "period": "01:00 PM - 02:30 PM",
+      "subject": "Data Structures in TS",
+      "room": "Room 205",
+      "teacherName": "Marcus Brody"
+    },
+    {
+      "id": "tt8",
+      "classId": "c2",
+      "day": "Wednesday",
+      "period": "10:00 AM - 11:30 AM",
+      "subject": "Compiler Engineering",
+      "room": "Room 205",
+      "teacherName": "Marcus Brody"
+    },
+    {
+      "id": "tt9",
+      "classId": "c3",
+      "day": "Thursday",
+      "period": "09:00 AM - 10:30 AM",
+      "subject": "Elizabethan Tragedies",
+      "room": "Lab 1",
+      "teacherName": "Marcus Brody"
+    }
+  ],
+  "materials": [
+    {
+      "id": "mat1",
+      "title": "Quantum Double-Slit Experiment Reference",
+      "description": "Comprehensive explanation sheet outlining double-slit, wave function collapse, and Copenhagen interpretation.",
+      "fileUrl": "quantum_double_slit_guide.pdf",
+      "uploadedBy": "u2",
+      "classId": "c1",
+      "uploadedAt": "2026-07-13T10:00:00.000Z",
+      "type": "pdf"
+    },
+    {
+      "id": "mat2",
+      "title": "Introduction to Quantum Electrodynamics (QED) Slides",
+      "description": "Slides for the upcoming lecture series based on Richard Feynman's groundbreaking work.",
+      "fileUrl": "intro_qed_lecture_slides.pdf",
+      "uploadedBy": "u2",
+      "classId": "c1",
+      "uploadedAt": "2026-07-14T11:20:00.000Z",
+      "type": "pdf"
+    },
+    {
+      "id": "mat3",
+      "title": "TypeScript Advanced Utility Types Cheatsheet",
+      "description": "Quick reference for Omit, Pick, ReturnType, Record, and Template Literal Types.",
+      "fileUrl": "typescript_utility_cheatsheet.pdf",
+      "uploadedBy": "u2",
+      "classId": "c2",
+      "uploadedAt": "2026-07-15T09:12:00.000Z",
+      "type": "pdf"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "les1",
+      "title": "Introduction to Special Relativity",
+      "description": "Deep-dive into spacetime, Lorentz transformation, and time dilation calculations.",
+      "classId": "c1",
+      "status": "completed",
+      "date": "2026-07-10"
+    },
+    {
+      "id": "les2",
+      "title": "Wave Particle Duality & Photoelectric Effect",
+      "description": "Exploring Max Planck's constant, energy quanta, and dual-slit findings.",
+      "classId": "c1",
+      "status": "in-progress",
+      "date": "2026-07-15"
+    },
+    {
+      "id": "les3",
+      "title": "Schrödinger's Cat & Wavefunction Collapse",
+      "description": "Concept seminar focusing on probability density distributions and quantum superposition states.",
+      "classId": "c1",
+      "status": "planned",
+      "date": "2026-07-22"
+    }
+  ],
+  "engagement": [
+    {
+      "id": "eng1",
+      "studentId": "s1",
+      "studentName": "Sarah Jenkins",
+      "classId": "c1",
+      "participationScore": 92,
+      "quizScore": 88,
+      "homeworkCompletion": 100,
+      "engagementLevel": "high",
+      "attendanceRate": 85
+    },
+    {
+      "id": "eng2",
+      "studentId": "s2",
+      "studentName": "Lucas Thorne",
+      "classId": "c1",
+      "participationScore": 75,
+      "quizScore": 79,
+      "homeworkCompletion": 80,
+      "engagementLevel": "medium",
+      "attendanceRate": 67
+    },
+    {
+      "id": "eng3",
+      "studentId": "s3",
+      "studentName": "Maya Lin",
+      "classId": "c1",
+      "participationScore": 96,
+      "quizScore": 94,
+      "homeworkCompletion": 100,
+      "engagementLevel": "high",
+      "attendanceRate": 100
+    }
+  ]
+}
