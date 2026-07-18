@@ -162,7 +162,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
           <div className="mt-12 space-y-4">
             <div className="flex items-center gap-3 text-xs text-slate-500 font-mono">
               <Sparkles className="w-4 h-4 text-cyan-400 animate-pulse" />
-              <span>POWERED BY GEMINI 3.5 FLASH</span>
+              <span>Developed By KavinM</span>
             </div>
             
             {/* Quick-Select Seed Accounts for Easy Navigation */}
